@@ -14,5 +14,5 @@ any transaction can read uncomitted writes of any other transaction
 ### Read comitted
 transaction can read ONLY comitted writes of any other transaction
 ### Repeatable reads
-poses a lock on a recorded until the the transaction is comitted.
+poses a lock on a record until the the transaction is comitted.
 ## Searlization
