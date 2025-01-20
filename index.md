@@ -8,7 +8,11 @@ should rollback. If the database went down prior to a commit of a transaction,
 all the successful queries in the transactions should rollback  
 
 ## Isolation
-### Read uncomitted: any transaction can read uncomitted writes of any other transaction
-### Read comitted: transaction can read ONLY comitted writes of any other transaction
-### Repeatable reads: poses a lock on a recorded until the the transaction is comitted.
+
+### Read uncomitted
+any transaction can read uncomitted writes of any other transaction
+### Read comitted
+transaction can read ONLY comitted writes of any other transaction
+### Repeatable reads
+poses a lock on a recorded until the the transaction is comitted.
 ## Searlization
