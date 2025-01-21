@@ -22,3 +22,7 @@ Description: Ensures that if a transaction reads a record, it will see the same 
 Implication: Prevents dirty reads and non-repeatable reads, but phantom reads (new rows being added by other transactions) can still occur.
 
 ## Searlization
+foo 
+
+## Heap
+A heap is a table that does not have a clustered index. It can be slower for read operations because there is no inherent order to the data. However, it is beneficial for scenarios with high-volume insert operations due to its simple structure, which avoids the overhead of maintaining a clustered index.
